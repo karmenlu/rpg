@@ -1,7 +1,5 @@
 import React from 'react'
 export default function Sprite({image, data, position}) {
-    
-    
     const { y, x, h, w } = data;
     return (<div
         style={{

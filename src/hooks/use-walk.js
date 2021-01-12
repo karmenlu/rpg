@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-export default function useWalk(maxSteps) {
+export default function useWalk(maxSteps, arenaWidth, arenaHeight) {
     const [position, setPosition] = useState({x:0, y:0})
     const [dir, setDir] = useState(0)
     const [step, setStep] = useState(0)
@@ -35,8 +35,8 @@ export default function useWalk(maxSteps) {
     
     function move(dir) {
         setPosition(prev => ({
-            x: stayOnGrid(prev.x + modifier[dir].x, 320 - 32),
-            y: stayOnGrid(prev.y + modifier[dir].y, 568 - 32)
+            x: stayOnGrid(prev.x + modifier[dir].x, arenaWidth - 32),
+            y: stayOnGrid(prev.y + modifier[dir].y, arenaHeight - 32)
         }))
     }
     

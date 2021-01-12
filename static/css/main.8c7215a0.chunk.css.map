@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA,gBACI,gBAAiB,CACjB,iBAAkB,CAClB,iBAAkB,CAClB,sBAAuB,CACvB,WAAY,CACZ,YACJ","file":"main.8c7215a0.chunk.css","sourcesContent":[".zone-container {\n    margin-left: auto;\n    margin-right: auto;\n    position: relative;\n    background-color: green;\n    width: 320px;\n    height: 568px;\n}"]}
